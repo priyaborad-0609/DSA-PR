@@ -12,12 +12,12 @@ function removeDuplicates(arr) {
         }
     }
 
-    return i + 1; // new length
+    return i + 1; 
 }
 
 // Example
 let arr1 = [1, 1, 2, 2, 3, 4, 4];
 let len = removeDuplicates(arr1);
 
-console.log(len);              // 4
+console.log(len);              
 console.log(arr1.slice(0, len)); // [1, 2, 3, 4]

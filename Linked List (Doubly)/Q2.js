@@ -11,7 +11,6 @@ function deleteNode(head, key) {
 
     if (!current) return head;
 
-    // deleting head
     if (current === head) {
         head = head.next;
         if (head) head.prev = null;

@@ -6,12 +6,10 @@ function deleteCircular(head, key) {
     let current = head;
     let prev = null;
 
-    // single node case
     if (head.value === key && head.next === head) {
         return null;
     }
 
-    // deleting head
     if (head.value === key) {
         while (current.next !== head) {
             current = current.next;

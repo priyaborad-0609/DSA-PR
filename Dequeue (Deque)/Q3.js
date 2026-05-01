@@ -5,12 +5,10 @@ function maxSlidingWindow(arr, k) {
     let result = [];
 
     for (let i = 0; i < arr.length; i++) {
-        // remove out of window
         if (deque.length && deque[0] <= i - k) {
             deque.shift();
         }
 
-        // remove smaller elements
         while (deque.length && arr[deque[deque.length - 1]] < arr[i]) {
             deque.pop();
         }

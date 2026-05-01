@@ -20,4 +20,4 @@ function firstNonRepeating(stream) {
 }
 
 // Example
-console.log(firstNonRepeating("aabc")); // "a#bb"
+console.log(firstNonRepeating("aabc"));

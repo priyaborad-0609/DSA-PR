@@ -10,7 +10,7 @@ function firstOccurrence(arr, target) {
 
         if (arr[mid] === target) {
             result = mid;
-            right = mid - 1; // move left
+            right = mid - 1; 
         } else if (arr[mid] < target) {
             left = mid + 1;
         } else {
@@ -22,4 +22,4 @@ function firstOccurrence(arr, target) {
 }
 
 // Example
-console.log(firstOccurrence([1, 2, 2, 2, 3, 4], 2)); // 1
+console.log(firstOccurrence([1, 2, 2, 2, 3, 4], 2)); 

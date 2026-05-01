@@ -18,14 +18,13 @@ function mergeSortedArrays(arr1, arr2) {
         while (j < n + m) {
             let a, b;
 
-            // get values
+            
             if (i < n) a = arr1[i];
             else a = arr2[i - n];
 
             if (j < n) b = arr1[j];
             else b = arr2[j - n];
 
-            // swap if needed
             if (a > b) {
                 if (i < n && j < n) {
                     [arr1[i], arr1[j]] = [arr1[j], arr1[i]];
